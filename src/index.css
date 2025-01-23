@@ -1,3 +1,45 @@
-.active {
-  color: dodgerblue;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+body {
+  font-family: "Sour Gummy", serif;
+
+  header {
+    background-color: #93A57B;
+    padding: 30px;
+
+    ul {
+      list-style: none;
+      display: flex;
+
+      li {
+        margin-right: 30px;
+        font-size: 1.2rem;
+
+        a {
+          text-decoration: none;
+          color: #ebe6e0;
+        }
+      }
+    }
+
+  }
+
+  main {
+    background-color: #cf8c7bce;
+
+    .container {
+      background-color: #ECDDE0;
+      height: 100%;
+      padding: 20px;
+    }
+  }
 }

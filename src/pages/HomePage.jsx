@@ -2,7 +2,7 @@ import React from 'react'
 
 const HomePage = () => {
   return (
-    <section>
+    <section className="container">
       HOME
     </section>
   )

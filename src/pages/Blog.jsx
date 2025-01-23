@@ -1,7 +1,7 @@
 
 const Blog = () => {
   return (
-    <section>
+    <section className="container">
       BLOG
     </section>
   )

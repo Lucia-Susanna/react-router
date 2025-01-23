@@ -1,7 +1,7 @@
 
 const About = () => {
   return (
-    <section>
+    <section className="container">
       CHI SIAMO
     </section>
   )

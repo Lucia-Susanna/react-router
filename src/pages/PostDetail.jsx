@@ -36,12 +36,18 @@ const PostDetail = () => {
         <div className="card">
           <h1>{post?.title}</h1>
           <div className="d-flex">
-            <div className="img">
+            <div className="img d-flex">
               <img src={post?.image} alt={post?.title} />
             </div>
             <div className="txt d-flex column">
-              <p className="content">{post?.content}</p>
-              <div className="tags">{post?.tags.join(', ')}</div>
+              <div className="content">
+                <span className="bold">Descrizione: </span>
+                <span>{post?.content} lorem300</span>
+              </div>
+              <div className="tags">
+                <span className="bold">Tags: </span>
+                <span>{post?.tags.join(', ')}</span>
+              </div>
             </div>
 
           </div>

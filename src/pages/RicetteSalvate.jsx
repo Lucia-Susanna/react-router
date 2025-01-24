@@ -1,7 +1,8 @@
 import axios from "axios"
 import { useState, useEffect } from "react"
+import { NavLink } from "react-router-dom"
 
-const Blog = () => {
+const RicetteSalvate = () => {
   const apiUrl = "http://localhost:3000"
   const [postsList, setPostsList] = useState(null)
 
@@ -31,8 +32,10 @@ const Blog = () => {
           <li className="d-flex justify-between">
             <span className="titolo">{post.title}</span>
             <span>
-              <a href="#">mostra dettagli</a>
-              <button><i className="fa-solid fa-trash-can"></i></button>
+              <NavLink to={`/ricette-salvate/${post.id}`} href="#">Mostra dettagli</NavLink>
+              <button>
+                <i className="fa-solid fa-trash-can"></i>
+              </button>
             </span>
           </li>
         ))}
@@ -41,4 +44,4 @@ const Blog = () => {
   )
 }
 
-export default Blog
+export default RicetteSalvate

@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom"
+import { useParams, useNavigate } from "react-router-dom"
 import { useState, useEffect } from "react"
 import axios from "axios"
 
@@ -6,6 +6,7 @@ const PostDetail = () => {
 
   const apiUrl = "http://localhost:3000"
   const { id } = useParams();
+  const navigate = useNavigate()
   const [post, setPost] = useState(null)
 
   // const [pizza, setPizza] = useState
@@ -51,6 +52,13 @@ const PostDetail = () => {
             </div>
 
           </div>
+        </div>
+        <div className="back">
+          <button
+            onClick={() => navigate(-1)}
+          >
+            Torna all'elenco
+          </button>
         </div>
       </div>
 

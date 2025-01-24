@@ -137,6 +137,21 @@ body {
           margin-top: 30px;
         }
       }
+
+      button {
+        font-family: "Sour Gummy", serif;
+        border: 1px solid #93A57B;
+        background-color: #ebe6e0;
+        padding: 5px;
+        border-radius: 5px;
+        margin-top: 60px;
+
+        &:hover {
+          color: #cf8c7bce;
+          cursor: pointer;
+        }
+
+      }
     }
   }
 
